@@ -1,0 +1,43 @@
+body{
+	background-color:darkgray;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	padding: 0 50px 0;
+}
+
+h1{
+	font-size: 38px; 
+	line-height: 45px;
+	font-weight: 700;
+	text-align: center;
+	padding: 50px 0 0;
+	margin-bottom: 30px;
+}
+
+h6{
+	font-size: 22px;
+	line-height: 28px;
+	font-weight: 500;
+}
+
+.inputs-block{
+	display: flex;
+	margin-right: 30px;
+	flex-wrap: wrap;
+}
+
+input{
+	padding: 15px;
+	border-radius: 5px;
+	font-size: 20px;
+	margin: 15px;
+}
+
+.inputs-wrapper input{
+	display: flex;
+	flex-direction: column;
+}
+
+.inputs-block:nth-child(2){
+	width: 1000px;
+}
