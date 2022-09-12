@@ -1,5 +1,6 @@
 body{
 	background-color:darkgray;
+	
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 400;
 	padding: 0 50px 0;
@@ -40,4 +41,8 @@ input{
 
 .inputs-block:nth-child(2){
 	width: 1000px;
+}
+
+#money-box-range{
+	padding: 0;
 }
