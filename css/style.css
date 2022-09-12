@@ -1,13 +1,17 @@
-body{
-	background-color:darkgray;
-	
+body {
+	background-color: darkgray;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 400;
-	padding: 0 50px 0;
 }
 
-h1{
-	font-size: 38px; 
+.main-wrapper {
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+h1 {
+	font-size: 38px;
 	line-height: 45px;
 	font-weight: 700;
 	text-align: center;
@@ -15,34 +19,73 @@ h1{
 	margin-bottom: 30px;
 }
 
-h6{
+h6 {
 	font-size: 22px;
 	line-height: 28px;
 	font-weight: 500;
 }
 
-.inputs-block{
+.inputs-block {
 	display: flex;
 	margin-right: 30px;
 	flex-wrap: wrap;
 }
 
-input{
+.inputs-block-column {
+	flex: 1 1 32%;
+	margin-right: 5px;
+}
+
+.inputs-block-column h6 {
+	height: 60px;
+}
+
+.range-block {
+	flex: 1 1 100%;
+}
+
+input {
 	padding: 15px;
 	border-radius: 5px;
 	font-size: 20px;
-	margin: 15px;
+	margin: 0 15px 15px 0;
 }
 
-.inputs-wrapper input{
+
+@media (max-width: 636px) {
+
+	input {
+		max-width: 150px;
+		padding: 5px 0 5px 10px;
+		font-size: 14px;
+	}
+
+	h6 {
+		font-size: 18px;
+		line-height: 22px;
+	}
+	
+	
+	
+}
+
+@media (max-width: 928px) {
+	.inputs-block-column h6 {
+		height: auto;
+		margin-bottom: 10px;
+	}
+}
+
+
+.inputs-wrapper input {
 	display: flex;
 	flex-direction: column;
 }
 
-.inputs-block:nth-child(2){
-	width: 1000px;
+#money-box-range {
+	padding: 0;
 }
 
-#money-box-range{
-	padding: 0;
+.result-block {
+	display: flex;
 }
